@@ -1,4 +1,5 @@
 library(knockoff)
+library(prelim.knockoffs)
 
 ## process HIV data from http://hivdb.stanford.edu/pages/published_analysis/genophenoPNAS2006/DATA/PI_DATA.txt to send to matlab
 

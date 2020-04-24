@@ -1,4 +1,5 @@
 set.seed(8)
+knock.gen = function(x) create.fixed(x, method='sdp', randomize = F)
 p=100; n=200; k=15
 X = matrix(rnorm(n*p),n)
 nonzero = sample(p, k)
