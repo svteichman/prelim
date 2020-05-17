@@ -5,7 +5,7 @@ library(grid)
 library(lattice)
 
 # Prep X and Y ----
-
+# Part of Rina's code to process data, received over email 
 ## process HIV data from http://hivdb.stanford.edu/pages/published_analysis/genophenoPNAS2006/DATA/PI_DATA.txt to send to matlab
 
 hivdata=read.table('genetic_application/NNRTI/hivdata.txt',fill=TRUE,sep='\t',header=TRUE)
@@ -65,6 +65,7 @@ save(hivY, file = "genetic_application/NNRTI/hivY.rda")
 save(Xnums, file = "genetic_application/NNRTI/Xnums.rda")
 
 # run analysis -----
+# my code to run analysis
 run_hiv_data <- function(Xthresh,q) {
   ny <- dim(hivY)[2]
   
